@@ -68,17 +68,28 @@
             }
         </style>
     </head>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").dblclick(function(){
+                    $("ul.professional-interests").toggle();
+              });
+          });
+      </script>
     <body>
-        <nav>
-                <header>ethan's subpar site</header>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="secret.html">Secret</a></li>
-                </ul>
+        <div id= "all-contents">
+            <nav>
+                <main>
+                    <header>ethan's subpar site</header>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="secret.html">Secret</a></li>
+                    </ul>
             </nav>
-           <div class="sidebar">
+            <header>Ethan Blazier</header>
+            <p>Student at UVA</p>
+            <div class="sidebar">
                     <img src="https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-1/p160x160/20992543_270123843488748_2721190570045300390_n.jpg?oh=c2b77664d68eb1d4b9a71100f8775e18&oe=5A516FCB">
                         <img>
                             <style>
@@ -86,9 +97,6 @@
                             </style>
                         </img>
                 </div>
-        <div id= "all-contents">
-            <header>Ethan Blazier</header>
-            <p>Student at UVA</p>
                                 <section class="interests">
                         <header><b>Interests</b></header>
                         <ul>
@@ -97,13 +105,26 @@
                             <li>breathing oxygen</li>
                         </ul>
                     </section>
+        
             
-            
-            <main>
+           
                 <div class="sidebar">
                 </div>
     
                 <div class="content">
+                </div>
+            </main>
+            <main>
+                <div class="content">
+                    <header>Professional Interests</header>
+                    <section class="interests">
+                    <button>Click this to see my professional interests</button>
+                    <ul class="professional-interests">
+                    <li>Game Design</li>
+                    <li>Art</li>
+                    <li>Graphic Design</li>
+                    </ul>
+                    </section>
                 </div>
             </main>
         </div>
